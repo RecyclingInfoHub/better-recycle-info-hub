@@ -1,13 +1,16 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "better-recycle-info-hub",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "An info hub for everything related to recycling",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Better Recycle Malaysia <recylinginfohub@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.7.0",
+    "daisyui": "^1.16.2",
+    "firebase": "^9.5.0",
     "gatsby": "^4.2.0",
     "gatsby-plugin-feed": "^4.2.0",
     "gatsby-plugin-gatsby-cloud": "^4.2.0",
@@ -30,14 +33,25 @@
     "prismjs": "^1.25.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-firebase-hooks": "^4.0.1",
     "react-helmet": "^6.1.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
-    "prettier": "^2.4.1"
+    "autoprefixer": "^10.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-webpack-plugin": "^3.1.1",
+    "gatsby-plugin-eslint": "^4.0.2",
+    "gatsby-plugin-postcss": "^5.2.0",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.19"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/RecyclingInfoHub/better-recycle-info-hub#readme",
   "keywords": [
     "gatsby"
   ],
@@ -45,7 +59,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/RecyclingInfoHub/better-recycle-info-hub.git"
   },
   "scripts": {
     "build": "gatsby build",
