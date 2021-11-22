@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Better Recycle Info Hub`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Better Recycle Malaysia`,
+      summary: `Dedicated to make recycling better and easier for everyone.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `An info hub for everything related to recycling`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `betterrecycle`,
     },
   },
   plugins: [
@@ -125,6 +125,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
