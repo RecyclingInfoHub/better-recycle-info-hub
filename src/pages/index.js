@@ -1,65 +1,65 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 
-import Bio from "../components/Bio";
 import Layout from "../components/layouts/AppLayout";
 import Seo from "../components/Seo";
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
-  const posts = data.allMarkdownRemark.nodes;
+import paperIcon from "../images/paper.png";
+import plasticIcon from "../images/plastics.png";
+import glassIcon from "../images/glass.png";
+import metalIcon from "../images/aluminium-can.png";
+import electronicIcon from "../images/cell-phone.jpg";
+import batteryIcon from "../images/car-battery-icon.jpg";
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <Bio />
-        <p>No blog posts found.</p>
-      </Layout>
-    );
-  }
+const Index = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug;
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          );
-        })}
-      </ol>
+      <Seo title="Better Recycle Info Hub" />
+      <div className="grid grid-cols-3 gap-4 mx-auto justify-center w-1/2">
+        <Link to="/">
+          <div className="text-center">
+            <img src={paperIcon} className="w-48 mx-auto group-hover:scale-125" />
+            Paper
+          </div>
+        </Link>
+        <Link to="/">
+          <div className="text-center">
+            <img src={plasticIcon} className="w-48 mx-auto group-hover:scale-125" />
+            Plastics
+          </div>
+        </Link>
+        <Link to="/">
+          <div className="text-center">
+            <img src={glassIcon} className="w-48 mx-auto group-hover:scale-125" />
+            Glass
+          </div>
+        </Link>
+        <Link to="/">
+          <div className="text-center">
+            <img src={metalIcon} className="w-48 mx-auto group-hover:scale-125" />
+            Metal
+          </div>
+        </Link>
+        <Link to="/">
+          <div className="text-center">
+            <img src={electronicIcon} className="w-48 mx-auto group-hover:scale-125" />
+            Electronics
+          </div>
+        </Link>
+        <Link to="/">
+          <div className="text-center">
+            <img src={batteryIcon} className="w-48 mx-auto group-hover:scale-125" />
+            Battery
+          </div>
+        </Link>
+      </div>
     </Layout>
   );
 };
 
-export default BlogIndex;
+export default Index;
 
 export const pageQuery = graphql`
   query {

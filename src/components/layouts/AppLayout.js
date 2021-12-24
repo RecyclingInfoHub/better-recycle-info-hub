@@ -9,7 +9,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       {/* <header className="global-header">{header}</header> */}
-      <div className="navbar bg-primary text-neutral-content mb-10">
+      <div className="navbar bg-green text-gray mb-10">
         <div className="flex-none px-2 mx-2">
           <Link className="text-lg font-bold" to="/">
             {title || 'Better Recycle Malaysia'}
@@ -20,7 +20,7 @@ const Layout = ({ location, title, children }) => {
             <Link className="btn btn-ghost btn-sm rounded-btn" to="/map">
               Map
             </Link>
-            <Link className="btn btn-ghost btn-sm rounded-btn" to="/">
+            <Link className="btn btn-ghost btn-sm rounded-btn" to="/blog">
               Blog
             </Link>
           </div>

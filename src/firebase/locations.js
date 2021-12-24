@@ -4,5 +4,5 @@ import { app } from "./client";
 
 export const useLocations = () => {
   const locationRef = collection(getFirestore(app), "locations");
-  return useCollectionData(locationRef);
+  return useCollectionData(locationRef, { idField: 'id' });
 };

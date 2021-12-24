@@ -41,7 +41,7 @@ function Map() {
   const [infoOpen, setInfoOpen] = useState(false);
 
   // We have to create a mapping of our places to actual Marker objects
-  const markerLoadHandler = (marker, { NO_ID_FIELD: id }) =>
+  const markerLoadHandler = (marker, { id: id }) =>
     setMarkerMap(prevState => ({ ...prevState, [id]: marker }));
 
   const markerClickHandler = (event, place) => {
@@ -81,7 +81,7 @@ function Map() {
             {clusterer =>
               listing.map(place => (
                 <Pin
-                  key={place.NO_ID_FIELD}
+                  key={place.id}
                   position={{ lat: place.lat, lng: place.lng }}
                   clusterer={clusterer}
                   onLoad={marker => markerLoadHandler(marker, place)}
@@ -94,7 +94,7 @@ function Map() {
 
         {infoOpen && selectedPlace && (
           <InfoWindow
-            anchor={markerMap[selectedPlace.NO_ID_FIELD]}
+            anchor={markerMap[selectedPlace.id]}
             onCloseClick={() => setInfoOpen(false)}
           >
             <div>
@@ -103,6 +103,12 @@ function Map() {
             </div>
           </InfoWindow>
         )}
+
+        {listing && listing.map((place, index) => {
+          console.log(listing);
+          return <span key={index}>heelo {place.id}</span>;
+        })}
+
       </GoogleMap>
     );
   };
