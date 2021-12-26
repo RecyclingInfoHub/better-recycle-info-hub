@@ -10,9 +10,10 @@
   "dependencies": {
     "@react-google-maps/api": "^2.7.0",
     "daisyui": "^1.16.2",
-    "firebase": "^9.5.0",
+    "firebase": "^9.6.1",
     "gatsby": "^4.2.0",
     "gatsby-plugin-feed": "^4.2.0",
+    "gatsby-plugin-firebase-v9.0": "^1.0.2",
     "gatsby-plugin-gatsby-cloud": "^4.2.0",
     "gatsby-plugin-google-analytics": "^4.2.0",
     "gatsby-plugin-image": "^2.2.0",
