@@ -104,20 +104,17 @@ function Map() {
           </InfoWindow>
         )}
 
-        {listing && listing.map((place, index) => {
-          console.log(listing);
-          return <span key={index}>heelo {place.id}</span>;
-        })}
-
       </GoogleMap>
     );
   };
 
   if (loadError) {
     return <div>Map cannot be loaded right now, sorry.</div>;
+  } else if (!isLoaded) {
+    return <div>Loading</div>;
+  } else {
+    return renderMap();
   }
-
-  return isLoaded ? renderMap() : <div>Loading</div>;
 }
 
 export default Map;
