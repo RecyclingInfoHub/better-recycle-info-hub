@@ -7,14 +7,14 @@ description: "Testing "
 
 <div style="margin:0 40px;">
 
-  <h2>Subtitle</h2>
+<h2>Subtitle</h2>
 
-  <div style="display:flex;padding:40px 60px;">
+<div style="display:flex;padding:40px 60px;">
 
-   <div style="border:1px solid green; width:200px; height:100px;margin:0 10px;"></div>
+<div style="border:1px solid green; width:200px; height:100px;margin:0 10px;"></div>
 
-    <div style="border:1px solid green; width:200px; height:100px;margin:0 10px;"></div>
+<div style="border:1px solid green; width:200px; height:100px;margin:0 10px;"></div>
 
-  </div>
+</div>
 
 </div>
