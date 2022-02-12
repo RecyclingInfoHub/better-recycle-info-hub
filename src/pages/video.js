@@ -36,7 +36,7 @@ const Video = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <img src={bulbImage} className="w-3/5 mx-auto" />
+      <img src={bulbImage} className="w-full h-72 object-cover" />
       <div className="mx-auto mt-12">
         <h1 className="text-2xl text-center font-bold my-6">What is happening in the world of recycling?</h1>
         <Swiper modules={[Navigation]} loop navigation className="w-3/4">
