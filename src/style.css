@@ -84,7 +84,7 @@ body {
 }
 
 footer {
-  padding: var(--spacing-6) var(--spacing-0);
+  padding: var(--spacing-6) var(--spacing-0) var(--spacing-2);
 }
 
 hr {
@@ -309,7 +309,7 @@ a:focus {
 
 .blog-post header h1 {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: bold;
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
 

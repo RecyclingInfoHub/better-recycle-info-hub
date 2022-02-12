@@ -9,9 +9,9 @@ const Layout = ({ location, title, children }) => {
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       {/* <header className="global-header">{header}</header> */}
-      <div className="navbar bg-green text-gray mb-10">
+      <div className="navbar bg-green text-gray h-10 mb-10">
         <div className="flex-none px-2 mx-2">
-          <Link className="text-lg font-bold" to="/">
+          <Link className="text-xl font-bold" to="/">
             {title || 'Better Recycle Malaysia'}
           </Link>
         </div>
