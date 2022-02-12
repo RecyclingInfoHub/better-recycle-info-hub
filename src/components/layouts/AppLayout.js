@@ -7,9 +7,9 @@ const Layout = ({ location, title, children }) => {
   const isRootPath = location?.pathname === rootPath;
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
+    <div className="global-wrapper bg-gray-200" data-is-root-path={isRootPath}>
       {/* <header className="global-header">{header}</header> */}
-      <div className="navbar bg-green text-gray h-10 mb-10">
+      <div className="navbar bg-green text-gray h-14 mb-10">
         <div className="flex-none px-2 mx-2">
           <Link className="text-xl font-bold" to="/">
             {title || 'Better Recycle Malaysia'}
@@ -22,6 +22,9 @@ const Layout = ({ location, title, children }) => {
             </Link>
             <Link className="btn btn-ghost btn-sm rounded-btn" to="/blog">
               Blog
+            </Link>
+            <Link className="btn btn-ghost btn-sm rounded-btn" to="/video">
+              Video
             </Link>
           </div>
         </div>
