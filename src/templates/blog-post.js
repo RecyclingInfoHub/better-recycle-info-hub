@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post"
+        className="blog-post py-6 px-4 bg-white"
         itemScope
         itemType="http://schema.org/Article"
       >
