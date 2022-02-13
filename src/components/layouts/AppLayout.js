@@ -30,7 +30,7 @@ const Layout = ({ location, title, children }) => {
         </div>
       </div>
       <div className="container mx-auto px-2">
-        <main className="h-screen">{children}</main>
+        <main>{children}</main>
         <footer className="py-10">
           © {new Date().getFullYear()}, Built with
           {` `}
