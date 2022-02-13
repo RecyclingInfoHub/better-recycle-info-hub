@@ -7,7 +7,7 @@ const Layout = ({ location, title, children }) => {
   const isRootPath = location?.pathname === rootPath;
 
   return (
-    <div className="global-wrapper bg-gray-200" data-is-root-path={isRootPath}>
+    <div className="global-wrapper bg-base-200" data-is-root-path={isRootPath}>
       {/* <header className="global-header">{header}</header> */}
       <div className="navbar bg-green text-gray h-14 mb-10">
         <div className="flex-none px-2 mx-2">
@@ -30,8 +30,8 @@ const Layout = ({ location, title, children }) => {
         </div>
       </div>
       <div className="container mx-auto px-2">
-        <main>{children}</main>
-        <footer>
+        <main className="h-screen">{children}</main>
+        <footer className="py-10">
           © {new Date().getFullYear()}, Built with
           {` `}
           ❤️
