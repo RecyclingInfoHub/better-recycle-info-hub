@@ -35,7 +35,7 @@ const Video = ({ location }) => {
   // const videoList2 = [];
 
   return (
-    <Layout location={location}>
+    <Layout location={location} className="overflow-x-clip">
       <img src={bulbImage} className="w-screen max-w-none h-96 -mx-2 object-cover" />
       <div className="mx-auto mt-12">
         <h1 className="text-2xl text-center font-bold my-6">What is happening in the world of recycling?</h1>

@@ -1,13 +1,13 @@
 import { Link } from "gatsby";
 import * as React from "react";
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, children, className = "" }) => {
   // eslint-disable-next-line no-undef
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location?.pathname === rootPath;
 
   return (
-    <div className="global-wrapper bg-base-200" data-is-root-path={isRootPath}>
+    <div className={`global-wrapper flex flex-col w-100 min-h-screen bg-base-300 ${className}`} data-is-root-path={isRootPath}>
       {/* <header className="global-header">{header}</header> */}
       <div className="navbar bg-green text-gray h-14 mb-10">
         <div className="flex-none px-2 mx-2">
@@ -29,9 +29,9 @@ const Layout = ({ location, title, children }) => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-2">
-        <main>{children}</main>
-        <footer className="py-10">
+      <div className="container grow flex flex-col mx-auto px-2">
+        <main className="grow">{children}</main>
+        <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           ❤️

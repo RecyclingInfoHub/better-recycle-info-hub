@@ -1,17 +1,8 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-// Import Swiper React components
-import { Navigation } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-
 import Layout from "../components/layouts/AppLayout";
 import Seo from "../components/Seo";
-import CardIframe from "../components/CardIframe";
 import LinkImage from "../components/LinkImage";
 
 import paperImage from "../images/paper.png";
@@ -48,35 +39,6 @@ const Index = ({ data, location }) => {
         <LinkImage image={metalImage} title="Tin &amp; Metal" to={"/"} />
         <LinkImage image={electronicImage} title="Electornics" to={"/"} />
         <LinkImage image={batteryImage} title="Battery" to={"/"} />
-      </div>
-      <div className="mx-auto mt-24">
-        <h1 className="text-2xl text-center font-bold">
-          Sample Video Carousel
-        </h1>
-        <Swiper modules={[Navigation]} loop navigation className="w-3/4">
-          <SwiperSlide>
-            <div className="grid grid-cols-4 gap-8 w-5/6 mx-auto">
-              {videoList1.map(({ cardTitle, embedUrl }, index) => (
-                <CardIframe
-                  key={index}
-                  cardTitle={cardTitle}
-                  embedUrl={embedUrl}
-                ></CardIframe>
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="grid grid-cols-4 gap-8 w-5/6 mx-auto">
-              {videoList2.map(({ cardTitle, embedUrl }, index) => (
-                <CardIframe
-                  key={index}
-                  cardTitle={cardTitle}
-                  embedUrl={embedUrl}
-                ></CardIframe>
-              ))}
-            </div>
-          </SwiperSlide>
-        </Swiper>
       </div>
     </Layout>
   );
