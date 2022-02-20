@@ -9,7 +9,7 @@ const Layout = ({ location, title, children, className = "" }) => {
   return (
     <div className={`global-wrapper flex flex-col w-100 min-h-screen bg-base-300 ${className}`} data-is-root-path={isRootPath}>
       {/* <header className="global-header">{header}</header> */}
-      <div className="navbar bg-green text-gray h-14 mb-10">
+      <div className="navbar bg-green text-gray h-14">
         <div className="flex-none px-2 mx-2">
           <Link className="text-xl font-bold" to="/">
             {title || 'Better Recycle Malaysia'}
@@ -29,7 +29,7 @@ const Layout = ({ location, title, children, className = "" }) => {
           </div>
         </div>
       </div>
-      <div className="container grow flex flex-col mx-auto px-2">
+      <div className="grow flex flex-col">
         <main className="grow">{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

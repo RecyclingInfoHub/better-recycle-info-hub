@@ -4,7 +4,9 @@ import MapContainer from "../components/MapContainer";
 
 const Map = ({ location }) => (
   <Layout location={location}>
-    <MapContainer />
+    <div className="mx-auto pt-10 container">
+      <MapContainer />
+    </div>
   </Layout>
 );
 
