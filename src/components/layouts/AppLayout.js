@@ -12,7 +12,7 @@ const Layout = ({ location, title, children, className = "" }) => {
       <div className="navbar bg-green text-gray h-14">
         <div className="flex-none px-2 mx-2">
           <Link className="text-xl font-bold" to="/">
-            {title || 'Better Recycle Malaysia'}
+            {title || 'Better Recycle Info Hub'}
           </Link>
         </div>
         <div className="flex-1 px-2 mx-2">
