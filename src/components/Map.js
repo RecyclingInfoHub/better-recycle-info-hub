@@ -23,19 +23,20 @@ const containerStyle = {
 const MALAYSIA = { lat: 4.109319, lng: 109.455474 };
 // const KUALA_LUMPUR = { lat: 3.140853, lng: 101.693207 };
 
+// Map Options
 const options = {
   zoom: 6,
   center: MALAYSIA,
 };
 
-function Map() {
+function Map({ materialFilterList }) {
   const { isLoaded, loadError } = useJsApiLoader({
     googleMapsApiKey: process.env.GATSBY_MAPS_API_SECRET,
     // ...otherOptions
   });
 
-  const [listing] = useLocations();
-
+  // Hooks
+  const [listing] = useLocations(materialFilterList);
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [markerMap, setMarkerMap] = useState({});
   const [infoOpen, setInfoOpen] = useState(false);
