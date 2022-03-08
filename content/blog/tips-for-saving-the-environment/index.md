@@ -7,22 +7,26 @@ description: What can we do to minimize our waste
 
 <br><br>
 
-Bring your own recycle bags when you go for grocery shopping.
+<ol>
 
-On top of that, bring some string bags to purchase weight goods such as onions, garlic, potatoes and etc.
+<li>Bring your own recycle bags when you go for grocery shopping.</li>
 
-Bring your own take away boxes if you go out for take away food.
+<li>On top of that, bring some string bags to purchase weight goods such as onions, garlic, potatoes and etc.</li>
 
-Refuse purchasing things that have complicated packaging which end up being trash.
+<li>Bring your own take away boxes if you go out for take away food.</li>
 
-Have your own cutleries and straws when you dine out.
+<li>Refuse purchasing things that have complicated packaging which end up being trash.</li>
 
-Cut out one time used item as much as possible.
+<li>Have your own cutleries and straws when you dine out.</li>
 
-Compost your own organic waste in your household. (Support tool: Bokashi compost bin)
+<li>Cut out one time used item as much as possible.</li>
 
-Have your own flexible recycle bins at home.
+<li>Compost your own organic waste in your household. (Support tool: Bokashi compost bin)</li>
 
-Visit your local zero waste shop to find replacement of your daily product.
+<li>Have your own flexible recycle bins at home.</li>
 
-Ask yourself questions before purchasing something that can easily become trash. Do I really need it? Will I use it for a long time? How much value it will add into my life?
+<li>Visit your local zero waste shop to find replacement of your daily product.</li>
+
+<li>Ask yourself questions before purchasing something that can easily become trash. Do I really need it? Will I use it for a long time? How much value it will add into my life?</li>
+
+</ol>
