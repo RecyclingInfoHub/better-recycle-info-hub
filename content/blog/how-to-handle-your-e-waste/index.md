@@ -3,7 +3,9 @@ title: How to handle your e-waste
 date: 2022-03-08T13:36:03.712Z
 description: How to find your e-waste collector
 ---
-Maps:
+### **Maps:**
+
+
 
 <!--StartFragment-->
 
@@ -12,6 +14,8 @@ Maps:
 <!--EndFragment-->
 
 You can find your nearest e-waste collection point in the official government website
+
+
 
 <!--StartFragment-->
 
