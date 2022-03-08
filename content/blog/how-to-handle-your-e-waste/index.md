@@ -5,7 +5,7 @@ description: How to find your e-waste collector
 ---
 ### **Maps:**
 
-<br>
+<br><br>
 
 <!--StartFragment-->
 
@@ -15,7 +15,7 @@ description: How to find your e-waste collector
 
 You can find your nearest e-waste collection point in the official government website
 
-<br>
+<br><br>
 
 <!--StartFragment-->
 
