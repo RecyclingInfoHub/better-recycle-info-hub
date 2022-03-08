@@ -30,7 +30,8 @@ This is awesome man
 - item 2
 - item 3
 
-
-1. test 1
-2. test 2
-3. test 3
+<ol>
+<li>test 1</li>
+<li>test 2</li>
+<li>test 3</li>
+</ol>
