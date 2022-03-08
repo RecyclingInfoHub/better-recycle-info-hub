@@ -30,7 +30,7 @@ This is awesome man
 - item 2
 - item 3
 
-<ol>
+<ol class="list-decimal">
 <li>test 1</li>
 <li>test 2</li>
 <li>test 3</li>
