@@ -5,7 +5,7 @@ description: What can we do to minimize our waste
 ---
 > # **10 Tips of how we can minimize waste:**
 
-<br>
+<br><br>
 
 1. Bring your own recycle bags when you go for grocery shopping.
 2. On top of that, bring some string bags to purchase weight goods such as onions, garlic, potatoes and etc.
