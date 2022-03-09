@@ -35,3 +35,7 @@ This is awesome man
 <li>test 2</li>
 <li>test 3</li>
 </ol>
+
+1. one
+2. two
+3. three
