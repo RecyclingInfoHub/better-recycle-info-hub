@@ -8,13 +8,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
+// Custome Styles
+import "../style/swiper-video.css";
+
 import Layout from "../components/layouts/AppLayout";
 import CardIframe from "../components/CardIframe";
 
 import bulbImage from "../images/bulb.png";
 
 const Video = ({ location }) => {
-  const videoList1 = [
+  const videoList = [
     {
       cardTitle: "Singapore Recycling System",
       embedUrl: "https://www.youtube.com/embed/r-q5V6LDxEY",
@@ -32,7 +35,8 @@ const Video = ({ location }) => {
       embedUrl: "https://www.youtube.com/embed/aA0O9PBZ2H8",
     },
   ];
-  // const videoList2 = [];
+  const videoListSlice1 = videoList.slice(0, 5)
+  // const videoListSlice2 = videoList.slice(5);
 
   return (
     <Layout location={location} className="overflow-x-clip">
@@ -41,10 +45,10 @@ const Video = ({ location }) => {
         <h1 className="text-2xl text-center font-bold my-6">
           What is happening in the world of recycling?
         </h1>
-        <Swiper modules={[Navigation]} loop navigation className="w-3/4">
+        <Swiper modules={[Navigation]} loop navigation className="xl:w-3/4 swiper-video">
           <SwiperSlide>
             <div className="grid grid-cols-4 gap-8 w-5/6 mx-auto">
-              {videoList1.map(({ cardTitle, embedUrl }, index) => (
+              {videoListSlice1.map(({ cardTitle, embedUrl }, index) => (
                 <CardIframe
                   key={index}
                   cardTitle={cardTitle}
@@ -55,7 +59,7 @@ const Video = ({ location }) => {
           </SwiperSlide>
           {/* <SwiperSlide>
             <div className="grid grid-cols-4 gap-8 w-5/6 mx-auto">
-              {videoList2.map(({ cardTitle, embedUrl }, index) => (
+              {videoListSlice2.map(({ cardTitle, embedUrl }, index) => (
                 <CardIframe
                   key={index}
                   cardTitle={cardTitle}
