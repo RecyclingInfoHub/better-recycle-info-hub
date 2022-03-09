@@ -11,8 +11,8 @@ const ButtonRunBatch = () => {
   const runBatch = async () => {
     try {
       setIsLoading(true);
-
-      await Promise.all([writeBatchMaterial, writeBatchLocation]);
+      await writeBatchMaterial();
+      await writeBatchLocation();
     } catch (error) {
       console.log(error);
     } finally {
